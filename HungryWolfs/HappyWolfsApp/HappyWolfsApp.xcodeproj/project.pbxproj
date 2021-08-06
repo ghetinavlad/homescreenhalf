@@ -1,0 +1,670 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B4132DD426B93763006CEC47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4132DD326B93763006CEC47 /* AppDelegate.swift */; };
+		B4132DD626B93763006CEC47 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4132DD526B93763006CEC47 /* SceneDelegate.swift */; };
+		B4132DDB26B93763006CEC47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4132DD926B93763006CEC47 /* Main.storyboard */; };
+		B4132DDD26B93766006CEC47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4132DDC26B93766006CEC47 /* Assets.xcassets */; };
+		B4132DE026B93766006CEC47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4132DDE26B93766006CEC47 /* LaunchScreen.storyboard */; };
+		B4132DEB26B93766006CEC47 /* HappyWolfsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4132DEA26B93766006CEC47 /* HappyWolfsAppTests.swift */; };
+		B4132DF526B93766006CEC47 /* HappyWolfsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4132DF426B93766006CEC47 /* HappyWolfsAppUITests.swift */; };
+		B4132E0226B93F02006CEC47 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4132E0126B93F01006CEC47 /* HomeScreenViewController.swift */; };
+		B4132E0426B940AC006CEC47 /* ProfileScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4132E0326B940AC006CEC47 /* ProfileScreenViewController.swift */; };
+		B4132E0626B94129006CEC47 /* FavouritesScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4132E0526B94129006CEC47 /* FavouritesScreenViewController.swift */; };
+		B4132E0826B94C75006CEC47 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4132E0726B94C75006CEC47 /* TabBarViewController.swift */; };
+		B4614BFC26B976FE00891A17 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4614BFB26B976FE00891A17 /* CategoryCollectionViewCell.swift */; };
+		B4658E7F26BB18080064B47B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B4658E7E26BB18080064B47B /* Alamofire */; };
+		B4658E8126BB1F190064B47B /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4658E8026BB1F190064B47B /* Category.swift */; };
+		B4F2F95826BAAF5E00B6CAE3 /* FoodCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F2F95726BAAF5E00B6CAE3 /* FoodCollectionViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B4132DE726B93766006CEC47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4132DC826B93763006CEC47 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4132DCF26B93763006CEC47;
+			remoteInfo = HappyWolfsApp;
+		};
+		B4132DF126B93766006CEC47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4132DC826B93763006CEC47 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4132DCF26B93763006CEC47;
+			remoteInfo = HappyWolfsApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B4132DD026B93763006CEC47 /* HappyWolfsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappyWolfsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4132DD326B93763006CEC47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B4132DD526B93763006CEC47 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B4132DDA26B93763006CEC47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B4132DDC26B93766006CEC47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B4132DDF26B93766006CEC47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B4132DE126B93766006CEC47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4132DE626B93766006CEC47 /* HappyWolfsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HappyWolfsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4132DEA26B93766006CEC47 /* HappyWolfsAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappyWolfsAppTests.swift; sourceTree = "<group>"; };
+		B4132DF026B93766006CEC47 /* HappyWolfsAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HappyWolfsAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4132DF426B93766006CEC47 /* HappyWolfsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappyWolfsAppUITests.swift; sourceTree = "<group>"; };
+		B4132E0126B93F01006CEC47 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		B4132E0326B940AC006CEC47 /* ProfileScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreenViewController.swift; sourceTree = "<group>"; };
+		B4132E0526B94129006CEC47 /* FavouritesScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesScreenViewController.swift; sourceTree = "<group>"; };
+		B4132E0726B94C75006CEC47 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		B4614BFB26B976FE00891A17 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		B4658E8026BB1F190064B47B /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		B4F2F95726BAAF5E00B6CAE3 /* FoodCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCollectionViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B4132DCD26B93763006CEC47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4658E7F26BB18080064B47B /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4132DE326B93766006CEC47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4132DED26B93766006CEC47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B4132DC726B93763006CEC47 = {
+			isa = PBXGroup;
+			children = (
+				B4132DD226B93763006CEC47 /* HappyWolfsApp */,
+				B4132DE926B93766006CEC47 /* HappyWolfsAppTests */,
+				B4132DF326B93766006CEC47 /* HappyWolfsAppUITests */,
+				B4132DD126B93763006CEC47 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B4132DD126B93763006CEC47 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B4132DD026B93763006CEC47 /* HappyWolfsApp.app */,
+				B4132DE626B93766006CEC47 /* HappyWolfsAppTests.xctest */,
+				B4132DF026B93766006CEC47 /* HappyWolfsAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B4132DD226B93763006CEC47 /* HappyWolfsApp */ = {
+			isa = PBXGroup;
+			children = (
+				B4132DD326B93763006CEC47 /* AppDelegate.swift */,
+				B4132DD526B93763006CEC47 /* SceneDelegate.swift */,
+				B4132DD926B93763006CEC47 /* Main.storyboard */,
+				B4132E0726B94C75006CEC47 /* TabBarViewController.swift */,
+				B4132E0526B94129006CEC47 /* FavouritesScreenViewController.swift */,
+				B4132E0326B940AC006CEC47 /* ProfileScreenViewController.swift */,
+				B4658E8026BB1F190064B47B /* Category.swift */,
+				B4132DDC26B93766006CEC47 /* Assets.xcassets */,
+				B4132DDE26B93766006CEC47 /* LaunchScreen.storyboard */,
+				B4132E0126B93F01006CEC47 /* HomeScreenViewController.swift */,
+				B4614BFB26B976FE00891A17 /* CategoryCollectionViewCell.swift */,
+				B4F2F95726BAAF5E00B6CAE3 /* FoodCollectionViewCell.swift */,
+				B4132DE126B93766006CEC47 /* Info.plist */,
+			);
+			path = HappyWolfsApp;
+			sourceTree = "<group>";
+		};
+		B4132DE926B93766006CEC47 /* HappyWolfsAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				B4132DEA26B93766006CEC47 /* HappyWolfsAppTests.swift */,
+			);
+			path = HappyWolfsAppTests;
+			sourceTree = "<group>";
+		};
+		B4132DF326B93766006CEC47 /* HappyWolfsAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B4132DF426B93766006CEC47 /* HappyWolfsAppUITests.swift */,
+			);
+			path = HappyWolfsAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B4132DCF26B93763006CEC47 /* HappyWolfsApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4132DF826B93766006CEC47 /* Build configuration list for PBXNativeTarget "HappyWolfsApp" */;
+			buildPhases = (
+				B4132DCC26B93763006CEC47 /* Sources */,
+				B4132DCD26B93763006CEC47 /* Frameworks */,
+				B4132DCE26B93763006CEC47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HappyWolfsApp;
+			packageProductDependencies = (
+				B4658E7E26BB18080064B47B /* Alamofire */,
+			);
+			productName = HappyWolfsApp;
+			productReference = B4132DD026B93763006CEC47 /* HappyWolfsApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B4132DE526B93766006CEC47 /* HappyWolfsAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4132DFB26B93766006CEC47 /* Build configuration list for PBXNativeTarget "HappyWolfsAppTests" */;
+			buildPhases = (
+				B4132DE226B93766006CEC47 /* Sources */,
+				B4132DE326B93766006CEC47 /* Frameworks */,
+				B4132DE426B93766006CEC47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4132DE826B93766006CEC47 /* PBXTargetDependency */,
+			);
+			name = HappyWolfsAppTests;
+			productName = HappyWolfsAppTests;
+			productReference = B4132DE626B93766006CEC47 /* HappyWolfsAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B4132DEF26B93766006CEC47 /* HappyWolfsAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4132DFE26B93766006CEC47 /* Build configuration list for PBXNativeTarget "HappyWolfsAppUITests" */;
+			buildPhases = (
+				B4132DEC26B93766006CEC47 /* Sources */,
+				B4132DED26B93766006CEC47 /* Frameworks */,
+				B4132DEE26B93766006CEC47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4132DF226B93766006CEC47 /* PBXTargetDependency */,
+			);
+			name = HappyWolfsAppUITests;
+			productName = HappyWolfsAppUITests;
+			productReference = B4132DF026B93766006CEC47 /* HappyWolfsAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B4132DC826B93763006CEC47 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					B4132DCF26B93763006CEC47 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					B4132DE526B93766006CEC47 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = B4132DCF26B93763006CEC47;
+					};
+					B4132DEF26B93766006CEC47 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = B4132DCF26B93763006CEC47;
+					};
+				};
+			};
+			buildConfigurationList = B4132DCB26B93763006CEC47 /* Build configuration list for PBXProject "HappyWolfsApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B4132DC726B93763006CEC47;
+			packageReferences = (
+				B4658E7D26BB18080064B47B /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = B4132DD126B93763006CEC47 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B4132DCF26B93763006CEC47 /* HappyWolfsApp */,
+				B4132DE526B93766006CEC47 /* HappyWolfsAppTests */,
+				B4132DEF26B93766006CEC47 /* HappyWolfsAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B4132DCE26B93763006CEC47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4132DE026B93766006CEC47 /* LaunchScreen.storyboard in Resources */,
+				B4132DDD26B93766006CEC47 /* Assets.xcassets in Resources */,
+				B4132DDB26B93763006CEC47 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4132DE426B93766006CEC47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4132DEE26B93766006CEC47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B4132DCC26B93763006CEC47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4132E0626B94129006CEC47 /* FavouritesScreenViewController.swift in Sources */,
+				B4132E0426B940AC006CEC47 /* ProfileScreenViewController.swift in Sources */,
+				B4132E0226B93F02006CEC47 /* HomeScreenViewController.swift in Sources */,
+				B4132DD426B93763006CEC47 /* AppDelegate.swift in Sources */,
+				B4132E0826B94C75006CEC47 /* TabBarViewController.swift in Sources */,
+				B4658E8126BB1F190064B47B /* Category.swift in Sources */,
+				B4614BFC26B976FE00891A17 /* CategoryCollectionViewCell.swift in Sources */,
+				B4F2F95826BAAF5E00B6CAE3 /* FoodCollectionViewCell.swift in Sources */,
+				B4132DD626B93763006CEC47 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4132DE226B93766006CEC47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4132DEB26B93766006CEC47 /* HappyWolfsAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4132DEC26B93766006CEC47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4132DF526B93766006CEC47 /* HappyWolfsAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B4132DE826B93766006CEC47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B4132DCF26B93763006CEC47 /* HappyWolfsApp */;
+			targetProxy = B4132DE726B93766006CEC47 /* PBXContainerItemProxy */;
+		};
+		B4132DF226B93766006CEC47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B4132DCF26B93763006CEC47 /* HappyWolfsApp */;
+			targetProxy = B4132DF126B93766006CEC47 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B4132DD926B93763006CEC47 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4132DDA26B93763006CEC47 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B4132DDE26B93766006CEC47 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4132DDF26B93766006CEC47 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B4132DF626B93766006CEC47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B4132DF726B93766006CEC47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B4132DF926B93766006CEC47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HappyWolfsApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Wolfpack-Digital.HappyWolfsApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B4132DFA26B93766006CEC47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HappyWolfsApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Wolfpack-Digital.HappyWolfsApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B4132DFC26B93766006CEC47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Wolfpack-Digital.HappyWolfsAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HappyWolfsApp.app/HappyWolfsApp";
+			};
+			name = Debug;
+		};
+		B4132DFD26B93766006CEC47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Wolfpack-Digital.HappyWolfsAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HappyWolfsApp.app/HappyWolfsApp";
+			};
+			name = Release;
+		};
+		B4132DFF26B93766006CEC47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Wolfpack-Digital.HappyWolfsAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HappyWolfsApp;
+			};
+			name = Debug;
+		};
+		B4132E0026B93766006CEC47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Wolfpack-Digital.HappyWolfsAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HappyWolfsApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B4132DCB26B93763006CEC47 /* Build configuration list for PBXProject "HappyWolfsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4132DF626B93766006CEC47 /* Debug */,
+				B4132DF726B93766006CEC47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4132DF826B93766006CEC47 /* Build configuration list for PBXNativeTarget "HappyWolfsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4132DF926B93766006CEC47 /* Debug */,
+				B4132DFA26B93766006CEC47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4132DFB26B93766006CEC47 /* Build configuration list for PBXNativeTarget "HappyWolfsAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4132DFC26B93766006CEC47 /* Debug */,
+				B4132DFD26B93766006CEC47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4132DFE26B93766006CEC47 /* Build configuration list for PBXNativeTarget "HappyWolfsAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4132DFF26B93766006CEC47 /* Debug */,
+				B4132E0026B93766006CEC47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B4658E7D26BB18080064B47B /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B4658E7E26BB18080064B47B /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B4658E7D26BB18080064B47B /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = B4132DC826B93763006CEC47 /* Project object */;
+}
